@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="sharedpref" path="." />
+    <exclude domain="sharedpref" path="admob.xml" />
+    <include domain="database" path="pocketrate_db" />
+    <include domain="file" path="datastore/pocketrate_prefs.preferences_pb" />
+</full-backup-content>
