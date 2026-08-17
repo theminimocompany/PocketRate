@@ -137,12 +137,12 @@ class SplitCostsViewModel @Inject constructor(
         if (newCompanionName.isBlank()) return
         viewModelScope.launch {
             val colors = listOf(
-                0xFF8FA98F,
-                0xFF7E93A8,
-                0xFFB0A08E,
-                0xFF9E8FA9,
-                0xFF8FA9A5,
-                0xFFA9958F
+                0xFF0D3D6E,  // brand navy
+                0xFFFF5C19,  // brand orange
+                0xFF5B84A8,  // steel blue
+                0xFF4E8D8D,  // teal
+                0xFFC78D6B,  // terracotta
+                0xFF7A8794   // slate
             ).map { it.toInt() }
             val companion = Companion(
                 tripId = tripId,

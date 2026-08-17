@@ -68,7 +68,7 @@
     <string name="theme">Theme</string>
     <string name="dark_mode">Dark mode</string>
     <string name="privacy_policy">Privacy Policy</string>
-    <string name="privacy_policy_url" translatable="false">https://docs.google.com/document/d/13iJkSBMAp6iT2YKxb0IzdnCGkwDUi__QGmOevDypkc8</string>
+    <string name="privacy_policy_url" translatable="false">https://theminimocompany.github.io/PocketRate/PRIVACY_POLICY.html</string>
     <string name="reset_advertising_consent">Reset advertising consent</string>
     <string name="ads_disabled_by_privacy_choices">Ads disabled by your privacy choices</string>
     <string name="ad_load_failed">Couldn\'t load the ad. Check your connection and try again.</string>

@@ -449,19 +449,12 @@ private fun SettlementCard(
 
             AnimatedVisibility(visible = isExpanded) {
                 Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-                    if (settlement.isEmpty()) {
-                        Text(
-                            text = stringResource(R.string.no_settlements),
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            modifier = Modifier.padding(horizontal = 8.dp, vertical = 8.dp)
-                        )
-                    } else {
-                        settlement.forEachIndexed { index, result ->
-                            CompactSettlementRow(result = result)
-                            if (index < settlement.lastIndex) {
-                                HorizontalDivider(
-                                    modifier = Modifier.padding(horizontal = 8.dp),
+                    // Empty state is already conveyed by the summary subtitle above;
+                    // only render rows when there are settlements.
+                    settlement.forEachIndexed { index, result ->
+                        CompactSettlementRow(result = result)
+                        if (index < settlement.lastIndex) {
+                            HorizontalDivider(
                                     color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.5f)
                                 )
                             }
@@ -471,7 +464,6 @@ private fun SettlementCard(
             }
         }
     }
-}
 
 @Composable
 private fun CompactSettlementRow(result: SettlementResult) {
